@@ -1,4 +1,4 @@
-### 5.ENCODER 8TO3 DATAFLOW Modelling
+### ENCODER 8TO3 DATAFLOW Modelling
 
 **AIM:**
 
@@ -6,7 +6,7 @@ To implement  Encoder 8 To 3 in Dataflow Modelling using verilog and validating 
 
 **SOFTWARE REQUIRED:** Quartus prime
 
-**THEORY**
+**THEORY**:
 
 **Encoder 8 To 3**
 
@@ -35,15 +35,16 @@ Logical circuit of the above expressions is given below:
 Figure 02  Encoder 8 * 3
 
 **Procedure**
-
-write all the steps invloved 
-
-**PROGRAM**
-
-Program for Encoder 8 To 3 in Dataflow Modelling and verify its truth table in quartus using Verilog programming. 
-
-**Encoder**
 ```
+1.Type the program in Quartus software.
+2.Compile and run the program.
+3.Generate the RTL schematic and save the logic diagram.
+4.Create nodes for inputs and outputs to generate the timing diagram.
+5.For different input combinations generate the timing diagram.
+```
+**PROGRAM**
+```
+/* Program for Encoder 8 To 3 in Dataflow Modelling and verify its truth table in quartus using Verilog programming. 
 module encoder_top(din, a, b, c); 
 input [0:7] din; 
 output a,b,c; 
@@ -51,19 +52,20 @@ assign a=din[4] | din[5] | din[6] | din[7];
 assign b=din[2] | din[3] | din[6] | din[7];
 assign c=din[2] | din[4] | din[6] | din[7];
 endmodule
+
+Developed by: M.SAKTHIVEL
+RegisterNumber: 212222240088
+*/
 ```
-Developed by: SAKTHIVEL M
+## RTL LOGIC FOR Encoder 8 To 3 in Dataflow Modelling
+![Screenshot 2024-03-18 184114](https://github.com/23005672/ENCODER8TO3DATAFLOW/assets/138971519/cf69d021-d760-4687-8f4a-662494b8aa55)
 
-RegisterNumber:212222240088
+## TIMING DIGRAMS FOR Encoder 8 To 3 in Dataflow Modelling
+![Screenshot (40)](https://github.com/23005672/ENCODER8TO3DATAFLOW/assets/138971519/f8c32fd4-98f5-42e1-83cf-18ab7527e131)
 
-**RTL LOGIC FOR Encoder 8 To 3 in Dataflow Modelling**
-![outp 1 de](https://github.com/Sakthimurugavel/ENCODER8TO3DATAFLOW/assets/118707246/99cb3efe-5c8a-4eab-9805-58b6f8387c8d)
-
-**TIMING DIGRAMS FOR Encoder 8 To 3 in Dataflow Modelling**
-![out 2 de](https://github.com/Sakthimurugavel/ENCODER8TO3DATAFLOW/assets/118707246/cd2af015-059f-47b6-9593-a7ee12a64c08)
+## RESULTS
+Thus the code is ececuted successfully.
 
 
-**RESULTS**
 
-the output of encoder to data flow has been executed successfully
 
